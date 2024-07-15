@@ -1,0 +1,132 @@
+/* .form-login {
+    display: flex;
+    margin-right: 20px;
+}
+.for-login {
+    width: 90px;
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(167, 167, 167);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+.for-login a {
+    text-decoration: none;
+    color: white;
+}
+.for-login-first {
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    padding-left: 10px;
+    position: relative;
+    left: 55px;
+    width: 70px;
+    border: 1px solid gray;
+    text-align: start;
+    margin-right: -25px;
+    
+}
+.for-login-first:hover {
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    left: 135px;
+    width: 150px;
+    filter: drop-shadow(2px 2px 4px white);
+   
+}
+.for-login-last {
+width: 150px;
+text-align: end;
+padding-right: 10px;
+background-color: transparent;
+border: 1px solid gray;
+margin-right: 20px;
+
+
+}
+.for-login-last:hover {
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    filter: drop-shadow(2px 2px 4px white);
+    
+} */
+.form-login {
+    display: flex;
+    margin-right: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.for-login {
+    
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.for-login a {
+    text-decoration: none;
+    color: white;
+}
+.for-login-first {
+    width: 70px;
+    border: 1px solid gray;
+}
+.for-login-first:hover {
+    filter: drop-shadow(2px 2px 4px white);
+    box-shadow: 0 0 10px white;
+}
+.for-login-last:hover {
+    filter: drop-shadow(2px 2px 4px white);
+    box-shadow: 0 0 10px white;
+}
+.for-login-last {
+    width: 70px;
+    padding-right: 8px;
+    
+    }
+    .form-login:has(.for-login-first:hover)>.for-login-last:not(:hover) {
+        opacity: .10;
+     }
+     .form-login:has(.for-login-last:hover)>.for-login-first:not(:hover) {
+        opacity: .10;
+     }
+
+
+.navbar {
+    display: flex;
+    margin-left: 400px;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+
+    
+}
+.nav-list a {
+    display: block;
+    padding: 0.5em;
+    margin: 0 20px 0 20px ;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    border: 1px solid transparent;
+}
+.nav-list a:hover {
+    border: 1px solid white;
+    border-radius: 30px;
+    filter: drop-shadow(2px 2px 4px white);
+    backdrop-filter: blur(9px);
+    box-shadow: 0 0 7px white;
+}
+.nav-btn {
+    display: none;
+}
+

@@ -1,0 +1,145 @@
+        .card-content {
+            width: 300px;
+            height: 90vh;
+            background-color: transparent;
+            backdrop-filter: blur(15px);
+            display: grid;
+            border-radius: 40px;
+            justify-content: center;
+            border:4px rgb(196, 194, 194) solid;
+            text-align: center;
+            margin: 20px;
+        }   
+
+        .name {
+            margin: 20px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-foto {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            background-color: transparent;
+            backdrop-filter: blur(12px);
+        }
+        .img-foto img {
+            filter: drop-shadow(2px 2px 4px white);
+            border-radius: 20px;
+            border: 2px solid;
+        }
+        .img-foto img:hover {
+            background: linear-gradient(blue,gold);
+        }
+
+        .name span {
+            color: white;
+            font-size: 25px;
+            font-family: "Black Ops One", system-ui;
+            font-weight: 300;
+            font-style: normal;
+            text-shadow: 2px 2px 4px whitesmoke;
+        }
+
+        .name-under {
+           
+            margin-top:auto;
+            
+        }
+
+        .name-foto {
+            background-color: transparent;
+            border: 1px solid gray;
+            border-radius: 50%;
+            margin: 10px;
+            width: max-content;
+            height: max-content;
+            margin-left: 4em;
+            margin-right: 4em;
+            box-shadow: 0 0 15px white;
+        }
+        .name-foto:hover {
+            background: linear-gradient(black, rgb(83, 83, 83));
+        }
+
+        .name-foto img {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .name-foto img:hover {
+            filter: drop-shadow(4px 4px 8px white);
+        }
+
+        .form-info {
+            background-color: transparent;
+            display: block;
+            margin: 10px;
+            width: auto;
+            
+            text-align: start;
+            color: white;
+        }
+
+        .form-info h4 {
+            margin-top: -10px;
+            font-size: 20px;
+            font-family: "Black Ops One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            padding-left: 20px;
+        }
+
+        .form-info p {
+            font-size: 15px;
+            padding-left: 20px;
+            
+        }
+
+        .for-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .link-for-social {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-top: 20px;
+            margin: 10px; 
+        }
+       .link-for-social img {
+        filter: drop-shadow(2px 2px 5px white);
+        cursor: pointer;
+       }
+       .link-for-social:first-child img:hover  {
+        background-color: red;
+        border-radius: 50%;
+        border: 1px solid red;
+        filter: drop-shadow(2px 2px 5px red);
+       }
+       .link-for-social:last-child img:hover  {
+        background-color: rgb(8, 181, 255);
+        border-radius: 50%;
+        border: 1px solid rgb(8, 181, 255);
+        filter: drop-shadow(2px 2px 5px rgb(8, 181, 255));
+       }
+       .link-for-social:nth-child(2) img:hover  {
+        background-color: rgb(29, 36, 255);
+        border-radius: 50%;
+        border: 1px solid rgb(29, 36, 255);
+        filter: drop-shadow(2px 2px 5px rgb(29, 36, 255));
+       }
+       .link-for-social:nth-last-child(2) img:hover  {
+        background: linear-gradient( gold, #ff00ee  ) ;
+        border-radius: 50%;
+        border: 1px solid rgb(243, 0, 223);
+        filter: drop-shadow(2px 2px 5px rgb(243, 0, 223));
+       }
+        
