@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="C:\Users\igorp\WEB\CSS\CSS for Unlimited Header.css" rel="stylesheet"> 
+    <link href="C:\Users\igorp\WEB\CSS\CSS For Unlimited Aside.css" rel="stylesheet">
+    <link href="C:\Users\igorp\WEB\CSS\CSS for Unlimited Main.css" rel="stylesheet">  
+    <link href="C:\Users\igorp\WEB\CSS\CSS for  Unlimited Modal.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="C:\Users\igorp\WEB\IMG\favicon-32x32.png"
+    />
+    <title>Lesson for Div 3</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent),  url(https://github.com/IhorPlaskalnyi/1/blob/main/sumerki-v-chernom-cvete-sh2ikaren.jpg?raw=true);
+            background-attachment: fixed;
+            background-color: black;
+        }
+       
+        .container {
+            display: grid;
+            grid-template-areas:
+                "aside header header"
+                "aside main main"
+                "aside main main";
+            grid-template-columns: 350px 1fr 1fr ;
+            grid-template-rows: 100px 1fr 1fr ;
+            height: auto;
+            box-sizing: border-box;
+            gap: 0;
+            
+        }
+        header {
+            background-color: transparent;
+            grid-area: header;
+            top: 0;
+            position: fixed;
+            left: 0px;
+            right: 0;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        aside {
+            background-color: transparent;
+            grid-area: aside;
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 350px;
+            height: 100vh;
+        }
+
+        main {
+            background-color: transparent;
+            grid-area: main;
+            color: white;
+            width: 97%;
+            border: 1px solid white;
+            border-radius: 20px;
+            font-family: "Black Ops One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            }
+       
+        .div-for-photo {
+            display: flex;
+            }
+
+        /*.div-for-photo img {
+            width: 40px;
+            border: 2px solid gray;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all ease-in-out 0.8s;
+            cursor: pointer;
+            margin: 0 3px;
+        }
+        .div-for-photo img:hover {
+            filter: saturate(100%);
+            width: 70%;
+        } */
+        @media (max-width: 768px) {
+            .nav-btn {
+                font-size: 2em;
+                padding-inline: 10px;
+                padding-bottom: 3px;
+                border: none;
+                background-color: transparent;
+                color: white;
+                display: block;
+                cursor: pointer;
+            }
+            .nav-list {
+                display: none;
+            }
+            .drop:hover .nav-list {
+                display: block;
+                position: absolute;
+                background-color: transparent;
+                -webkit-backdrop-filter: blur(9px);
+                backdrop-filter: blur(9px);
+                z-index: 1;
+                text-align: center;
+                border-radius: 30px;
+            }
+            .drop {
+                margin-left: 1em;
+            }
+            
+            .navbar {
+                margin-left: 10px;
+            }
+            
+            aside, header  {
+                position: static;
+            }
+            .container {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "aside"
+                "main";
+            }
+            /* .for-login-first {
+               margin-left: -65px;
+            } */
+            
+            main {
+                width: 100%;
+                padding-right: 15px;
+                margin: 20px;
+                
+                
+            }
+            .card-content {
+                height: max-content;
+            }
+            
+           
+        }
+        h1::selection {
+            color: aqua;
+        }
+        
+          
+     
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="navbar">
+            <div class="drop">
+                <button class="nav-btn">&#9776;</button>
+                <div class="nav-list">
+                    <a href="#my-text">Home</a>
+                    <a href="#my-text1">HTML</a>
+                    <a href="#my-text2">CSS</a>
+                    <a href="#my-text3">JavaScript</a>
+                </div>
+            </div>
+           </div>
+        <div class="form-login">
+            <span id="openModalBtn" class="for-login for-login-first" title="Form for Login"><a href="#" >Login</a></span>
+            <span class="for-login for-login-last" title="Form for Registration"><a href="C:\Users\igorp\WEB\HTML\Form for Registration.html" target="_blank">Sign Up</a></span>
+        </div>
+        
+        </header>
+            <aside>
+                <div class="left-aside">
+                    <div class="card-content">
+                        <div class="name">
+                          <div class="img-foto"><img src="https://github.com/IhorPlaskalnyi/1/blob/main/ukraine.png?raw=true" alt="U" width="70px" height="70px"> </div> <span style="display: grid; text-align: start;"><span style="padding-left: 10px;">Ihor</span><span style="padding-left: 10px;">Plaskalnyi</span> </span>
+                        </div>
+                       
+                        <div class="name-under">
+                        <div class="name-foto">
+                            <img src="https://github.com/IhorPlaskalnyi/1/blob/main/343R-removebg-preview.png?raw=true" alt="logo">
+                        </div>
+                                                
+                        <div class="form-info">
+                            <p>Specialization:</p>
+                            <h4>Frontend Developer</h4>
+                            <p>Based in:</p>
+                            <h4>Sørkjosen, Norway</h4>
+                                <div class="for-button">
+                                <a href="#" target="_blank" class="link-for-social" ><img src="https://github.com/IhorPlaskalnyi/1/blob/main/youtube%20dark.png?raw=true" alt="Y" width="45px" height="45px"></a>
+                                <a href="#" target="_blank" class="link-for-social" ><img src="https://github.com/IhorPlaskalnyi/1/blob/main/facebook%20dark.png?raw=true" alt="F" width="45px" height="45px"></a>
+                                <a href="#" target="_blank" class="link-for-social" ><img src="https://github.com/IhorPlaskalnyi/1/blob/main/instagram%20dark.png?raw=true" alt="I" width="45px" height="45px"></a>
+                                <a href="#" target="_blank" class="link-for-social" ><img src="https://github.com/IhorPlaskalnyi/1/blob/main/tvitter%20dark%202.png?raw=true" alt="X" width="45px" height="45px"></a>
+                                </div>
+                        </div>
+                        </div>
+                        
+                </div>
+            </aside>
+            <main>
+                <div class="content">
+
+                     <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">×</span>
+
+                            <form class="form-2">
+                                <h2 class="formH2">Login</h2>
+                                <div class="input-group">
+                                    <input type="text" name="email" class="input" id="emailInput" required>
+                                    <label class="label">Enter Email ✉</label>
+                                    <div class="underline"></div>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" name="password" class="input" id="passwordInput" required>
+                                    <label class="label">Enter Password </label>
+                                    <div class="underline"></div>
+                                    
+                                </div>
+                                <br>
+                                    <div class="check-box">
+                                            <span class="box"><input id="check" type="checkbox">
+                                                <label class="check" for="myCheckbox">Remember</label>
+                                                    </span> <a href="#"><span class="forgot" onclick="duGlemtPassword();">Forgot Password?</span></a>
+                                    </div>
+                                <br>
+                                <button class="login" type="button" onclick="submitEmail();" >Login</button>
+                                <br>
+                                <form>
+                                <span class="register">Don't have an account?
+                                    <a href="C:\Users\igorp\WEB\HTML\Form for Registration.html" target="_blank" class="regist" onclick="registForForm();">Register</a>
+                                </span>
+                                </form>
+                            </form>
+                        </div>
+                    </div> 
+                </div>
+
+
+                    <div class="content-main">
+                         <h1>I'm Ihor Plaskalnnyi <br> Digital designer and developer.</h1>
+                        
+                         <details>
+                            <summary>About me!</summary>
+                            <p id="my-text">My name is Ihor Plaskalnyi. I am 24 years old. I'm from Ukraine. I currently live in Northern Norway. I study programming, development and webdesign.</p>
+                        </details>
+                        
+                    <div class="me-tools">
+                        <p>What tools do I use:</p> 
+                        <div class="me-tools-div" style="display: flex; justify-content: center;">
+                        <a href="https://getbootstrap.com" target="_blank"> <img src="https://github.com/IhorPlaskalnyi/1/blob/main/bootstrap-logo-shadow.png?raw=true" alt="B"></a>
+                        <a href="https://openai.com/chatgpt" target="_blank"> <img src="https://github.com/IhorPlaskalnyi/1/blob/main/OIP__1_-removebg-preview.png?raw=true" alt="B"></a>
+                        <a href="https://www.w3schools.com" target="_blank"> <img src="https://github.com/IhorPlaskalnyi/1/blob/main/w3schools-512.png?raw=true" alt="B"></a>
+                        
+                    </div>
+                    </div>
+                    
+                    <div class="me-languages">
+                        <p >I use these languages:</p>
+                        <div  class="me-tools-div" style="display: grid; justify-content: start;">
+                            <div class="block-for">
+                                <details> <summary>
+                            <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="B"></a> </summary>
+                            <p id="my-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sint voluptatibus iusto, quaerat illum quidem dignissimos sed earum reiciendis exercitationem?</p>
+                        </details>
+                        </div>
+                        <div class="block-for">
+                            <details> <summary>
+                            <a  href="https://ru.wikipedia.org/wiki/CSS" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="B"></a> </summary>
+                            <p id="my-text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, blanditiis odit. Dolorum excepturi eius porro sint? Qui, cum nesciunt! Aliquid?</p>
+                        </details>
+                        </div>
+                        <div class="block-for">
+                            <details> <summary>
+                            <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" alt="B"></a> </summary>
+                            <p id="my-text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque aspernatur expedita accusantium facilis debitis magni porro id fugiat ullam?</p>
+                        </details>
+                        </div>
+                    </div>
+
+                    </div>
+                  
+                    
+                    </div>
+                </div>
+               <!-- <div class="div-for-photo">
+                    <img src="https://th.bing.com/th/id/OIP.Bdb2STRTh5_ijSb7nT50dgHaD2?w=289&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.p9eGepZAC6yBpQOJyAfc-AHaEA?w=278&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.XW6iw688uj4tBQv_m5N3QgHaEo?w=285&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.wfI37osuwtQA5SEXmdpIAgHaEF?w=322&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                    <img src="https://th.bing.com/th/id/OIP.FqPuyX2tHqcqVAJqJVis8AHaE6?w=280&h=186&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                </div> -->
+            </main>
+        <footer>  </footer>
+
+    </div>
+    <script>
+           // Получить модальное окно
+var modal = document.getElementById("myModal");
+
+// Получить кнопку, которая открывает модальное окно
+var btn = document.getElementById("openModalBtn");
+
+// Получить элемент <span>, который закрывает модальное окно
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальное окно
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального окна, закройте его
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+function duGlemtPassword() {
+            const glemPassword = document.querySelector(".forgot");
+            if(glemPassword !== null) {
+                alert("And we must not forget");
+            }
+        }
+
+        function registForForm() {
+    const registButton = document.querySelector(".regist");
+
+    if (registButton !== null) {
+        alert("Do you want to register? Вы хотите зарегистрироваться?");
+        
+    } 
+}
+
+        function submitEmail() {
+            const emailInput = document.getElementById("emailInput");
+            const passwordInput = document.getElementById("passwordInput");
+
+            const email = emailInput.value;
+            const password = passwordInput.value;
+
+            if (email && password) {
+                console.log("True"); // Выводим в консоль, если оба поля заполнены
+                //window.location.href = "C:/Users/igorp/WEB/Lessons for Div/Untitled-1.html";
+                window.open("C:/Users/igorp/WEB/Lessons for Div/Untitled-3.html", "_blank");
+                //openNewPage();  Вызываем функцию для открытия новой страницы
+            } else {
+                console.log("False"); // Выводим в консоль, если хотя бы одно поле не заполнено
+            }
+            
+            console.log("Email:", email);
+            console.log("Password:", password);
+
+            const checkbox = document.getElementById("check");
+             
+             if (checkbox.checked) {
+                 console.log("Check: On");
+             } else {
+                 console.log("Check: Off");
+             } 
+    }
+    </script>
+    
+</body>
+</html>

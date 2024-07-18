@@ -1,0 +1,162 @@
+ /* Стили для модального окна */
+           
+ .modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку, если нужно */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.modal-content {
+        margin: 20px auto; /* 15% сверху и по центру */
+        padding: 20px;
+        width: 310px;
+        height: max-content;
+        border: 2px solid rgb(72, 72, 72);
+        background: url(https://th.bing.com/th/id/OIP.5FP3Spyw0Wo1Qkx3Q84ELAHaEK?rs=1&pid=ImgDetMain);
+        border-radius: 30px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+}
+
+.close {
+    color: #aaa;
+    padding-right: 20px;
+    text-align: end;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.input-group {
+        position: relative;
+        margin: 20px auto;
+        width: 300px;
+    }
+    .input-group .input {
+        font-size: 20px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #fffefe;
+        padding: 5px 0;
+        background-color: transparent;
+        outline: none;
+        color: white;
+        
+    }
+    .form-2 {
+        display: grid;
+        width: max-content;
+        padding-top: 0;
+        text-align: center;
+    }
+    .label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+    .input:focus~.label,
+    .input:valid~.label {
+        top: -20px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #787878;
+        transform: scaleX(0);
+        transition: all 0.3s ease;
+    }
+    .input:focus~.underline,
+    .input:valid~.underline {
+        transform: scaleX(1);
+        
+    }
+    
+    .check-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    #check {
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        margin-right: 10px;
+    }
+    .check, .forgot {
+        color: white;
+    }
+    .box {
+        display: flex;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .register {
+        font-size: 15px;
+        color: white;
+    }
+    .regist {
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .login {
+        height: 50px;
+        border-radius: 10px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .login:hover {
+        background-color: rgb(212, 212, 212);
+    }
+    ::placeholder {
+        color: white;
+    }
+    .regist:hover {
+        color: rgb(0, 0, 0);
+    }
+    .forgot:hover {
+        color: rgb(0, 0, 0);
+    }
+    .formH2 {
+        font-size: 40px;
+    }
+    
+    @media (max-width: 320px) {
+        .content-2,.form-2,.input-group,.check-box{
+            width: 90%;
+            padding: 5px;     
+            height: auto;
+        }
+}
